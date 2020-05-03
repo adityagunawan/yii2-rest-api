@@ -1,0 +1,76 @@
+# @register = http://localhost/yii2-rest-api/backend/web/site/register
+# POST {{register}}
+# content-type: application/json
+
+# {
+#     "username": "admin",
+#     "email": "aditya@docotel.com",
+#     "password": "admin123"
+# }
+
+# @employee-index = http://localhost/yii2-rest-api/backend/web/employee
+# POST {{employee-index}}
+# content-type: application/json
+
+# {}
+
+# @url = http://localhost/yii2-rest-api/backend/web/site/me
+# GET {{url}}
+# content-type: application/json
+
+# {}
+
+# @url = http://localhost/yii2-rest-api/backend/web/site/authorize
+# POST {{url}}
+# content-type: application/json
+
+# {
+#     "username" : "admin",
+#     "password" : "admin123"
+# }
+
+# @url = http://localhost/yii2-rest-api/backend/web/site/accesstoken
+# POST {{url}}
+# content-type: application/json
+
+# {
+#     "authorization_code": "9db732b4b01fe413abf851c93b511048"
+# }
+
+# @url = http://localhost/yii2-rest-api/backend/web/site/logout
+# GET  {{url}}
+# content-type: application/json
+
+# {}
+
+
+# @url = http://localhost/yii2-rest-api/backend/web/employee/index?access-token=39da5ecda9afbd89977995e26d8fcb7f
+# GET  {{url}}
+# content-type: application/json
+
+# {
+#     "search" :  {
+#             "name" : "James"
+#     }
+# }
+
+# @url = http://localhost/yii2-rest-api/backend/web/employee/create?access-token=39da5ecda9afbd89977995e26d8fcb7f
+# POST  {{url}}
+# content-type: application/json
+
+# {
+#     "name": "Yasmin",
+#     "email": "yasmin@gmail.com"
+# }
+
+
+# @token = 39da5ecda9afbd89977995e26d8fcb7f
+# @id = 3
+# @url = http://localhost/yii2-rest-api/backend/web/employee/update?access-token={{token}}&id={{id}}
+# PUT  {{url}}
+# content-type: application/json
+
+# {
+#     "name": "Endah Nofika Sari",
+#     "email": "endah@gmail.com"
+# }
